@@ -1,0 +1,1010 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Estilos para el contenedor principal */
+.installation-container {
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px; /* Máximo ancho del manual para que se asemeje a una hoja tamaño carta */
+  height: auto; /* Ajustar automáticamente la altura según el contenido */
+  color: #000; /* Color de texto negro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto elevado */
+  border-radius: 9px; /* Bordes redondeados */
+  margin: 0 auto; /* Eliminar márgenes exteriores y centrar horizontalmente */
+}
+
+/* Estilos para el contenedor interno */
+.installation-wrapper {
+  padding: 50px 10px; /* Aumentar el espacio interior */
+  background-color: #ffffff; /* Fondo blanco para el contenido */
+  border-radius: 9px; /* Bordes redondeados */
+}
+
+/* Estilos para títulos grandes */
+.titulo-grande {
+  font-size: 1.5em; /* Tamaño grande para h1 */
+  font-weight: bold;
+  text-align: center; /* Centrar el texto */
+}
+
+/* Estilos para subtítulos grandes */
+.subtitulo-grande {
+  font-size: 1.2em; /* Tamaño grande para h2 */
+  font-weight: bold;
+  text-align: center; /* Centrar el texto */
+  margin-top: 10px; /* Espacio superior */
+}
+
+/* Estilos para subtítulos chicos */
+.subtitulo-chico {
+  font-size: 1.1em; /* Tamaño chico para h3 */
+  font-weight: bold;
+  text-align: center; /* Centrar el texto */
+}
+
+/* Estilos para listas y bloques de código */
+.installation-container ul,
+.installation-container pre {
+  margin-top: 10px;
+  font-size: 1em;
+  text-align: left; /* Mantener la alineación a la izquierda para listas y bloques de código */
+}
+
+/* Estilos para bloques de código */
+.codigo {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  font-weight: bold;
+  display: block; /* Asegurar que ocupe el 100% del ancho disponible */
+  text-align: left; /* Alinear el texto a la izquierda */
+  margin: 10px 0; /* Centrar el bloque y agregar margen vertical */
+  width: auto; /* Ajustar el ancho automáticamente */
+  max-width: 100%; /* Evitar desbordamientos en pantallas pequeñas */
+  overflow-x: auto; /* Permitir el desplazamiento horizontal en bloques de código */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .installation-container {
+    padding: 10px;
+    margin-top: 30px; /* Reducir el margen superior en pantallas más pequeñas */
+  }
+
+  .installation-wrapper {
+    padding: 15px 20px; /* Reducir el espacio interior en pantallas más pequeñas */
+  }
+  
+  .titulo-grande {
+    font-size: 1.5em; /* Reducir el tamaño del texto en pantallas más pequeñas */
+  }
+  
+  .subtitulo-grande {
+    font-size: 1.2em; /* Reducir el tamaño del texto en pantallas más pequeñas */
+  }
+  
+  .subtitulo-chico {
+    font-size: 1em; /* Reducir el tamaño del texto en pantallas más pequeñas */
+  }
+
+  .codigo {
+    font-size: 0.9em; /* Reducir el tamaño del texto en bloques de código en pantallas más pequeñas */
+    padding: 8px; /* Reducir el padding en pantallas más pequeñas */
+  }
+
+  .installation-container ul,
+  .installation-container pre {
+    font-size: 0.9em; /* Reducir el tamaño del texto en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .installation-container {
+    padding: 5px; /* Reducir padding en pantallas muy pequeñas */
+    margin-top: 20px; /* Reducir el margen superior en pantallas muy pequeñas */
+  }
+
+  .installation-wrapper {
+    padding: 80px 15px; /* Reducir aún más el espacio interior en pantallas muy pequeñas */
+  }
+  
+  .titulo-grande {
+    font-size: 1.2em; /* Reducir aún más el tamaño del texto en pantallas muy pequeñas */
+  }
+  
+  .subtitulo-grande {
+    font-size: 1em; /* Reducir aún más el tamaño del texto en pantallas muy pequeñas */
+  }
+  
+  .subtitulo-chico {
+    font-size: 0.8em; /* Reducir aún más el tamaño del texto en pantallas muy pequeñas */
+  }
+
+  .codigo {
+    font-size: 0.8em; /* Reducir aún más el tamaño del texto en bloques de código en pantallas muy pequeñas */
+    padding: 6px; /* Reducir aún más el padding en pantallas muy pequeñas */
+  }
+
+  .installation-container ul,
+  .installation-container pre {
+    font-size: 0.8em; /* Reducir el tamaño del texto en pantallas muy pequeñas */
+  }
+}
+
+
+/* Reporte */
+.reporte {
+  padding: 20px;
+  text-align: center;
+  margin-top: 70px; /* Ajusta el margen superior */
+  width: 90%;
+  max-width: 800px; /* Máximo ancho del manual para que se asemeje a una hoja tamaño carta */
+  height: auto; /* Ajustar automáticamente la altura según el contenido */
+  color: #000; /* Color de texto negro */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto elevado */
+  border-radius: 9px; /* Bordes redondeados */
+
+
+}
+
+.reporte-content {
+  padding: 20px 40px; /* Aumentar el espacio interior */
+  background-color: #ffffff; /* Fondo blanco para el contenido */
+  border-radius: 9px; /* Bordes redondeados */
+}
+
+.comando {
+  font-size: 6%; /* Tamaño medio-pequeño */
+  text-align:relative; /* Centrando texto */
+  color: black;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.subtitle {
+  color: black;
+  font-size: 12px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+p {
+  color: black;
+  font-size: 12px;
+  line-height: 2.5;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.content {
+  color: black;
+  font-size: 14px;
+  line-height: 2.5;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.p-sangria {
+  text-indent: 20px;
+  line-height: 2.5;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.centered-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.manrope-paragraph {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+}
+
+
+.bitacora-errores {
+  font-family: 'Manrope', sans-serif;
+  margin: 20px;
+  font-size: 12px;
+}
+
+.bitacora-errores table {
+  width: calc(100% - 5px);
+  border-collapse: collapse;
+  padding: 14px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 14px;
+}
+
+.bitacora-errores th,
+.bitacora-errores td {
+  border: 1px solid #100f0f;
+  padding: 8px;
+  text-align: left;
+}
+
+.bitacora-errores th[colSpan="2"] {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.bitacora-errores tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.bitacora-errores tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.collage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+/* Media query para dispositivos con una anchura máxima de 480px (teléfonos móviles) */
+@media (max-width: 480px) {
+  .reporte {
+    max-width: 100%; /* Ajusta el ancho máximo de la hoja para dispositivos móviles */
+    margin-left: 20px; /* Ajusta el margen izquierdo para desplazar la hoja hacia la derecha */
+  }
+  .reporte-content {
+    padding: 10px; /* Añade padding interno para que el contenido tenga más espacio */
+    margin: 0; /* Elimina los márgenes laterales de .reporte-content */
+    max-width: 100%; /* Ajusta el ancho máximo de .reporte-content para que ocupe todo el espacio disponible */
+  }
+  .reporte-content p {
+    color: black; /* Color del texto */
+    font-size: 12px; /* Tamaño de la fuente */
+    line-height: 2.5; /* Altura de línea */
+    margin-bottom: 5px; /* Margen inferior */
+    text-align: justify; /* Alineación del texto */
+  }
+
+
+  .title {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .subtitle {
+    color: black;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .p-sangria {
+    text-indent: 20px;
+    font-size: 19px;
+    line-height: 2.5;
+    font-size: 8px; /* Ajusta el tamaño de la fuente */
+  }
+
+  p {
+    color: black;
+    font-size: 15px;
+    line-height: 2.5;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  .comando {
+    font-size: 8px; /* Ajusta el tamaño de la fuente */
+    margin: 0 2px; /* Reduce los márgenes laterales */
+    padding: 2px; /* Añade padding para mejor legibilidad */
+    text-align: left; /* Alinea el texto a la izquierda */
+    display: flex; /* Utiliza flexbox para centrar */
+    justify-content: center; /* Centra horizontalmente */
+  }
+  .bitacora-errores {
+    margin: 3px; /* Reduce aún más el margen exterior en pantallas pequeñas */
+    font-size: 6px; /* Aún más pequeño en pantallas pequeñas */
+  }
+  .bitacora-errores table {
+    padding: 3px; /* Reduce el relleno de la tabla en pantallas pequeñas */
+  }
+  .bitacora-errores th,
+  .bitacora-errores td {
+    padding: 3px; /* Reduce el relleno de las celdas en pantallas pequeñas */
+  }
+}
+
+
+
+
+
+/* Media query para dispositivos con una anchura máxima de 768px (tablets y teléfonos en orientación horizontal) */
+@media (max-width: 768px) {
+  .reporte {
+    max-width: 100%; /* Ajusta el ancho máximo de la hoja para dispositivos móviles */
+  }
+  .reporte-content {
+    margin: 0; /* Elimina los márgenes exteriores en dispositivos móviles */
+    max-width: 100%; 
+  }
+  .comando {
+    font-size: 6px; /* Aún más pequeño en pantallas pequeñas */
+    margin-bottom: 3px; /* Aún menos margen en pantallas pequeñas */
+  }
+  .bitacora-errores {
+    margin: 3px; /* Reduce aún más el margen exterior en pantallas pequeñas */
+    font-size: 6px; /* Aún más pequeño en pantallas pequeñas */
+  }
+  .bitacora-errores table {
+    padding: 3px; /* Reduce el relleno de la tabla en pantallas pequeñas */
+  }
+  .bitacora-errores th,
+  .bitacora-errores td {
+    padding: 3px; /* Reduce el relleno de las celdas en pantallas pequeñas */
+  }
+}
+
+/* finde reporte */
+
+.image {
+  flex: 1 1 auto;
+  max-width: 100%;
+}
+.team-section {
+  margin-top: 50px;
+}
+
+.team-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.team-list li h4 {
+  margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 480px) {
+  /* Contenedor principal en dispositivos móviles */
+  .manual-usuario-container {
+    padding: 10px; /* Reducir el relleno */
+    margin-top: 5px; /* Mover un poco más arriba */
+    width: calc(100% - 20px); /* Mantener el mismo ancho que el padding */
+    max-width: none; /* Restablecer el máximo ancho */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #e3f2fd; /* Fondo azul claro */
+  }
+
+  /* Contenido principal en dispositivos móviles */
+  .manual-usuario-content {
+    padding: 10px; /* Reducir el relleno */
+    margin-top: 5px; /* Mover un poco más arriba */
+    width: calc(100% - 20px); /* Mantener el mismo ancho que el padding */
+    max-width: none; /* Restablecer el máximo ancho */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+  }
+
+  /* Navegación en dispositivos móviles */
+  .manual-usuario-nav {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    padding: 10px; /* Ajustar el relleno */
+    border-bottom: 1px solid #dee2e6; /* Borde inferior */
+  }
+
+  /* Botones de navegación en dispositivos móviles */
+  .manual-usuario-nav-button {
+    padding: 15px 25px; /* Reducir el relleno */
+    font-size: 0.9rem; /* Reducir el tamaño del texto */
+    margin: 0 5px; /* Ajustar el margen entre botones */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #1165d2; /* Color de fondo predeterminado */
+  }
+
+  .manual-usuario-nav-button.active {
+    background-color: #97b5be; /* Color de fondo del botón activo */
+  }
+}
+
+/* fin de manual de usuario*/
+
+
+
+
+
+
+
+
+
+/* Portada*/
+.portada-header, .portada-subheader, .portada-semester {
+  text-align: center;
+}
+.project-title-section {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.project-info h4, .project-info p {
+  margin: 10px 0;
+}
+
+.portada-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinea el contenido un poco más bajo */
+  height: 100vh;
+  padding: 100px 20px; /* Aumento del padding en la parte superior */
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+
+}
+
+.portada-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  background-color: white;
+  padding: 90px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #bdbdbd;
+  flex-wrap: wrap; /* Permite que el contenido se ajuste en pantallas pequeñas */
+}
+
+.logo-left {
+  width: 250px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+}
+
+.logo-right {
+  width: 250px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+}
+
+.portada-text {
+  text-align: center;
+  margin: 0 20px; /* Ajusta el margen según tus necesidades */
+  flex-grow: 1;
+}
+
+.portada-text h1 {
+  margin: 12px 0; /* Ajuste del margen superior e inferior */
+  color: black; /* Color del texto */
+  font-size: 1.8em; /* Tamaño de fuente para h1 */
+}
+
+.portada-text h3 {
+  margin: 15px 0; /* Ajuste del margen superior e inferior */
+  color: black; /* Color del texto */
+  font-size: 1.5em; /* Tamaño de fuente para h3 */
+}
+
+.portada-text p {
+  margin: 20px 0;
+}
+
+.contenido {
+  margin-top: 20px; /* Espacio en la parte superior */
+  padding: 30px; /* Espacio interno */
+}
+
+.contenido p {
+  margin-bottom: 10px; /* Espacio entre párrafos */
+  font-size: 1px;
+}
+.contenido ul {
+  margin-top: 10px; /* Espacio superior para la lista */
+  padding-left: 20px; /* Indentación de la lista */
+}
+.contenido ul li {
+  margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+.portada-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+.portada-text ul li {
+  margin: 5px 0;
+}
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+  .portada-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-left, .logo-right {
+    width: 150px; /* Ajusta el tamaño para pantallas pequeñas */
+    margin-bottom: 10px;
+    height: auto;
+  }
+
+  .portada-text {
+    margin: 20px 0;
+    text-align: center; /* Ajusta el texto al centro en pantallas pequeñas */
+    
+    
+  }
+
+  .portada-text h1, .portada-text h3 {
+    font-size: 2em; /* Ajusta el tamaño para pantallas pequeñas */
+  }
+}
+
+.fecha {
+  text-align: center;
+  margin-top: 50px; /* Aumento del margen superior */
+  font-size: 1em; /* Tamaño de letra para la fecha */
+}
+
+@media (max-width: 480px) {
+  .portada-header {
+    padding: 10px;
+  }
+
+  .logo-left, .logo-right {
+    width: 80px; /* Ajusta el tamaño para pantallas muy pequeñas */
+    height: auto;
+  }
+
+  .portada-text h1, .portada-text h2 ,.portada-text h3{
+    font-size: 1em; /* Ajusta el tamaño para pantallas muy pequeñas */
+  }
+
+  .portada-text {
+    margin: 10px 0; /* Ajusta el margen superior e inferior */
+    
+  }
+}
+
+
+/* fin del  portada */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el contenedor del manual de usuario */
+.manual-usuario-container {
+  padding: 20px;
+  text-align: center;
+  margin-top: 70px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  background-color: #e3f2fd;
+  color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Estilos para el contenido del manual de usuario */
+.manual-usuario-content {
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* Estilos para el título del manual de usuario */
+.manual-usuario-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a237e;
+}
+
+/* Estilos para el texto del manual de usuario */
+.manual-usuario-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Estilos para la lista de pasos del manual de usuario */
+.manual-usuario-content ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+/* Estilos para cada paso del manual de usuario */
+.manual-usuario-content li {
+  margin-bottom: 20px;
+}
+
+/* Estilos para las imágenes del manual de usuario */
+.step-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Cambiado a 100% para adaptarse a diferentes tamaños de pantalla */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilos para los botones de cambio de página */
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Estilos para los botones de cambio de página individuales */
+.nav-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin: 0 5px;
+}
+
+/* Estilos para el botón de página activa */
+.nav-button.active {
+  background-color: #1b5e20;
+}
+
+/* Estilos para el botón de página inactiva */
+.nav-button.disabled {
+  background-color: #9e9e9e;
+}
+
+/* Media queries para dispositivos con una anchura máxima de 768px (tabletas) */
+@media (max-width: 768px) {
+  .manual-usuario-content {
+    padding: 20px; /* Añadir relleno lateral */
+  }
+
+  .manual-usuario-content h1 {
+    font-size: 1.5rem; /* Tamaño del título para tabletas */
+  }
+
+  .manual-usuario-content p {
+    font-size: 0.875rem; /* Tamaño del texto para tabletas */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el contenido del manual de uso */
+.manual-content {
+  padding: 20px 40px; /* Aumentar el espacio interior */
+  background-color: #ffffff; /* Fondo blanco para el contenido */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+
+/* Estilos para el texto del manual de uso */
+.manual-content p {
+  font-size: 1rem; /* Tamaño del texto */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para la lista de pasos del manual de uso */
+.manual-content ol {
+  list-style-type: decimal; /* Tipo de viñetas */
+  list-style-position: inside; /* Posición de las viñetas */
+}
+
+/* Estilos para cada paso del manual de uso */
+.manual-content li {
+  margin-bottom: 20px; /* Espacio inferior entre pasos */
+}
+
+/* Estilos para las imágenes del manual de uso */
+.manual-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%; /* Reducir el tamaño máximo de las imágenes */
+  height: auto; /* Altura automática */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos para los botones de cambio de página */
+.page-switch-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilos para los botones de cambio de página individuales */
+.page-switch-buttons button {
+  padding: 10px 20px;
+  font-size: 1rem; /* Tamaño del texto */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff; /* Color de texto blanco */
+  margin: 0 5px; /* Margen entre botones */
+}
+.manual-usuario-container {
+  display: flex;
+}
+
+.manual-nav {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-right: 1px solid #dee2e6;
+}
+.manual-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.manual-nav li {
+  margin-bottom: 1rem;
+}
+
+.manual-nav button {
+  background: none;
+  border: none;
+  color: #010911;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.manual-nav button:hover {
+  text-decoration: underline;
+}
+
+.manual-usuario-content {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.step {
+  margin-bottom: 2rem;
+}
+
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.nav-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/* Estilos para los botones de cambio de página */
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Estilos para los botones de cambio de página individuales */
+.nav-button {
+  padding: 10px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin: 0 5px;
+  background-color: #1165d2; /* Color de fondo predeterminado */
+}
+
+/* Estilos para el botón de página activa */
+.nav-button.active {
+  background-color: #97b5be;
+}
+
+
+
+/* Estilos para el contenido del manual de uso */
+.manual-content {
+  padding: 20px 30px; /* Aumentar el espacio interior */
+  background-color: #ffffff; /* Fondo blanco para el contenido */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilos para el título del manual de uso */
+.manual-content h1 {
+  font-size: 2rem; /* Tamaño del título */
+  margin-bottom: 20px; /* Espacio inferior */
+  color: #0c1aba; /* Color de texto azul oscuro */
+}
+
+/* Estilos para el texto del manual de uso */
+.manual-content p {
+  font-size: 1rem; /* Tamaño del texto */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para la lista de pasos del manual de uso */
+.manual-content ol {
+  list-style-type: decimal; /* Tipo de viñetas */
+  list-style-position: inside; /* Posición de las viñetas */
+}
+
+/* Estilos para cada paso del manual de uso */
+.manual-content li {
+  margin-bottom: 20px; /* Espacio inferior entre pasos */
+}
+
+/* Estilos para las imágenes del manual de uso */
+.manual-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%; /* Reducir el tamaño máximo de las imágenes */
+  height: auto; /* Altura automática */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos para los botones de cambio de página */
+.page-switch-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilos para los botones de cambio de página individuales */
+.page-switch-buttons button {
+  padding: 10px 20px;
+  font-size: 1rem; /* Tamaño del texto */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff; /* Color de texto blanco */
+  margin: 0 5px; /* Margen entre botones */
+}
+
+/* Estilos para el contenedor principal de la interfaz de usuario */
+.manual-usuario-container {
+  display: flex; /* Mostrar elementos en fila */
+}
+
+/* Estilos para la navegación del manual */
+.manual-nav {
+  position: sticky; /* Fijar la navegación al desplazarse */
+  top: 1cap; /* Desde la parte superior */
+  height: 100rem; /* Altura completa del viewport */
+  overflow-y: auto; /* Permitir desplazamiento vertical si la navegación es larga */
+  background-color: #f8f9fa; /* Color de fondo */
+  padding: 0.99rem; /* Espaciado interior */
+  border-right: 1px solid #dee2e6; /* Borde derecho */
+}
+
+.manual-nav ul {
+  list-style-type: none; /* Eliminar viñetas */
+  padding: 0; /* Eliminar relleno */
+}
+
+.manual-nav li {
+  margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+.manual-nav button {
+  background: none; /* Fondo transparente */
+  border: none; /* Sin borde */
+  color: #010911; /* Color de texto */
+  text-align: left; /* Alineación izquierda */
+  padding: 2px; /* Sin relleno */
+  cursor: pointer; /* Cursor de puntero */
+  font-size: 0.99rem; /* Tamaño del texto */
+}
+
+.manual-nav button:hover {
+  text-decoration: underline; /* Subrayar al pasar el cursor */
+}
+
+/* Estilos para el contenido principal del manual */
+.manual-usuario-content {
+  flex-grow: 1; /* Hacer que el contenido principal crezca para ocupar el espacio restante */
+  padding: 1rem; /* Espaciado interior */
+}
+
+/* Estilos para los pasos */
+.step {
+  margin-bottom: 2rem; /* Espaciado inferior */
+}
+
+/* Estilos para las imágenes centradas */
+.centered-image {
+  display: block; /* Mostrar como bloque */
+  margin-left: auto; /* Margen izquierdo automático */
+  margin-right: auto; /* Margen derecho automático */
+}
+
+/* Estilos para la barra de navegación */
+.navigation {
+  display: flex; /* Mostrar elementos en fila */
+  justify-content: space-between; /* Distribuir el espacio entre los elementos */
+  margin-top: 1rem; /* Espaciado superior */
+}
+
+/* Estilos para los botones de navegación */
+.nav-button {
+  padding: 0.5rem 1rem; /* Espaciado interior */
+  font-size: 1rem; /* Tamaño del texto */
+  cursor: pointer; /* Cursor de puntero */
+}
